@@ -1,4 +1,3 @@
-from config import Client
+from config import Client, argParser
 
-for container in Client.containers.list(all):
-    print(container.name)
+args = argParser.parse_args()
