@@ -11,3 +11,9 @@ argParser.add_argument(
         help='Select containers to be deleted',
         action='store_true'
         )
+
+argParser.add_argument(
+        '-i', '--images',
+        help='Select images to be deleted',
+        action='store_true'
+        )
