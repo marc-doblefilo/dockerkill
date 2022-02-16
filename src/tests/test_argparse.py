@@ -11,6 +11,6 @@ def test_images_value():
     assert getattr(args, 'images') == True
 
 def test_months_value():
-    args = argParser.parse_args('-o 5'.split())
+    args = argParser.parse_args('-s bc3ab5c96f92'.split())
 
-    assert getattr(args, 'older') == 5
+    assert getattr(args, 'since') == 'bc3ab5c96f92'

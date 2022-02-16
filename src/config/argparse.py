@@ -19,11 +19,11 @@ argParser.add_argument(
         )
 
 argParser.add_argument(
-        '-o', '--older',
-        help='Number of months that a container/image need to be older than to be deleted',
+        '-s', '--since',
+        help='Id or Name of the container since the day all containers will be deleted',
         action='store',
         nargs='?',
         default=argparse.SUPPRESS,
-        type=int,
-        metavar='MONTHS'
+        type=str,
+        metavar='ID/NAME'
         )
